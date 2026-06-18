@@ -1,0 +1,20 @@
+{
+  "screenshot_command": {
+    "type": "string",
+    "description": "触发截图的指令关键词（保留配置，建议使用指令别名）",
+    "hint": "当前版本已内置多个别名：截图、截屏、screen、screenshot、capture、printscreen。",
+    "default": "截图"
+  },
+  "monitor_index": {
+    "type": "int",
+    "description": "要截图的显示器编号（0 = 主显示器，1 = 第二个显示器，依次类推）",
+    "hint": "超出范围将自动回退到主显示器。",
+    "default": 0
+  },
+  "auto_clean_days": {
+    "type": "int",
+    "description": "自动清理 N 天前的历史截图，设为 0 则关闭自动清理",
+    "hint": "每次截图前自动检查并删除超过指定天数的旧截图。建议 7~30 天，0 表示不自动清理。手动清理可使用 /清理截图 指令。",
+    "default": 7
+  }
+}

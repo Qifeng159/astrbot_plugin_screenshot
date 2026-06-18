@@ -1,0 +1,14 @@
+name: astrbot_plugin_screenshot
+display_name: 截图插件
+short_desc: 对指定显示器进行截图并发送给用户，支持多显示器环境。
+desc: 截图插件允许用户通过自定义指令触发屏幕截图，支持多显示器环境下的显示器选择。截图后自动将图片发送到当前会话，适合远程查看桌面状态、截图分享等场景。
+help: 使用 /截图 触发截图（默认指令，可在管理面板中自定义）。支持多显示器：修改配置中的 monitor_index 即可切换目标显示器。
+version: v1.0.0
+author: Qifeng
+repo: https://github.com/Qifeng159/astrbot_plugin_screenshot
+astrbot_version: ">=4.16,<5"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - lark
